@@ -1,0 +1,35 @@
+#cms_fancybox-cms-img-select img,
+#cms_grid-cms-img-select img,
+#cms_carousel-cms-img-select img,
+#cms_menu_products-cms-img-select img,
+#cms_slider_carousel-cms-img-select img,
+#cms_fancybox_single-cms-img-select img {
+	margin-bottom: 5px;
+	-webkit-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+	display: block;
+	margin-bottom: 10px;
+	max-width: 50%;
+}
+#cms_fancybox-cms-img-select img:hover,
+#cms_fancybox-cms-img-select img.selected,
+#cms_menu_products-cms-img-select img:hover,
+#cms_menu_products-cms-img-select img.selected,
+#cms_carousel-cms-img-select img:hover,
+#cms_carousel-cms-img-select img.selected,
+#cms_grid-cms-img-select img:hover,
+#cms_grid-cms-img-select img.selected,
+#cms_slider_carousel-cms-img-select img:hover,
+#cms_fancybox_single-cms-img-select img:hover,
+#cms_slider_carousel-cms-img-select img.selected,
+#cms_fancybox_single-cms-img-select img.selected {
+	box-shadow: 1px 1px 6px red;
+}
+
+body .etabs li.tab a {
+	height: 40px;
+	line-height: 40px;
+	padding: 0 20px;
+	font-size: 12px;
+}

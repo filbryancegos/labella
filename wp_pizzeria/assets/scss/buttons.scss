@@ -1,0 +1,153 @@
+.bottom-line {
+	position: relative;
+	text-align: center;
+	margin-bottom: 30px;
+	
+	&:after {
+		position: absolute;
+		left: 50%;
+		bottom: -17px;
+		width: 30px;
+		height: 2px;
+		margin-left: -15px;
+		background-color: #FFF;
+		content: '';
+	}
+}
+
+.btn-store {
+	margin: 10px 0;
+}
+
+.button-clean,
+.button-red,
+.button-void,
+.button-void-alt,
+.button-yellow {
+	font-size: 17px;
+	display: inline-block;
+	padding: 14px 30px;
+	line-height: 1.3;
+	border: none;
+	outline: none;
+	color: #FFF !important;
+	@include border-radius(5px);
+	@include transition(all 0.2s ease-out);
+	
+	&.button-big {
+		padding: 18px 45px;
+	}
+	&.button-small{
+		padding: 7px 22px;
+    	border-width: 1px;
+    	@include border-radius(3px);
+    	line-height: 1.6;
+	}
+	&.button-heavy {
+		font-weight: bold;
+		padding: 18px 34px;
+	}
+	
+	&.button-long {
+		padding-left: 48px;
+		padding-right: 48px;
+	}
+	
+	&.button-low {
+		padding-top: 8px;
+		padding-bottom: 8px;
+		@include border-radius(3px);
+	}
+	
+	&.button-text-big {
+		font-size: 20px;
+		
+		&.with-right-arrow {
+			padding-right: 58px;
+		}
+	}
+	
+	&.button-text-small {
+		font-size: 15px;
+	}
+	
+	&.button-text-low {
+		text-transform: none;
+	}
+	
+	&.with-right-arrow {
+		position: relative;
+		padding-right: 52px;
+		
+		&:after {
+			font-family: 'FontAwesome';
+			position: absolute;
+			top: 50%;
+			right: 28px;
+			height: 20px;
+			margin-top: -12px;
+			line-height: 20px;
+			content: '\f178';
+			@include transition(all 0.2s ease-out);
+		}
+		
+		&:hover:after {
+			right: 20px;
+		}
+	}
+	&.button-uppercase{
+		text-transform: uppercase;
+	}
+}
+
+.button-clean {
+	&:hover {
+		color: #000 !important;
+		background-color: darken($primary_color,0.14%) !important;
+		border-color: darken($primary_color,0.14%) !important;
+	}
+}
+
+.button-red {
+	color: #FFF !important;
+	background-color: #f32f1b;
+	
+	&:focus,
+	&:hover {
+		color: #FFF !important;
+		background-color: #cb2918;
+	}
+}
+
+.button-void {
+	border: 2px #FFF solid;
+}
+
+.button-void-alt {
+	border: 1px #FFF solid;
+	text-transform: none;
+	&:hover {
+		color: #000 !important;
+		background-color: darken($primary_color,0.14%);
+		border-color: darken($primary_color,0.14%) !important;
+	}
+}
+
+.button-yellow {
+	color: #000 !important;
+	background-color: #f4cd03;
+	
+	&:focus,
+	&:hover {
+		color: #000 !important;
+	}
+}
+.button-primary-color {
+	color: #000 !important;
+	background-color: $primary_color;
+	
+	&:focus,
+	&:hover {
+		color: #000 !important;
+	}
+}

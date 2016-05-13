@@ -1,0 +1,195 @@
+/*== Header global ==*/
+header#masthead{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin-top: $header_margin_top;
+    margin-right: $header_margin_right;
+    margin-bottom: $header_margin_bottom;
+    margin-left: $header_margin_left;
+
+    padding-top: $header_padding_top;
+    padding-right: $header_padding_right;
+    padding-bottom: $header_padding_bottom;
+    padding-left: $header_padding_left;
+    border: none;
+    z-index: 50;
+    background-color: rgba(0,0,0,0.9);
+    &.page-header-normal{
+        position: static;
+        left: auto;
+        top: auto;
+        background: none;
+        &.has_admin_bar{
+            margin-top: $header_margin_top;
+        }
+    }
+    &.has_admin_bar{
+        margin-top: $header_margin_top + 32px;
+    }
+    #cshero-header-top{
+    	font-size: 13px;
+	    background-color: #000000;
+        margin-top: $header_top_margin_top;
+        margin-right: $header_top_margin_right;
+        margin-bottom: $header_top_margin_bottom;
+        margin-left: $header_top_margin_left;
+
+        padding-top: $header_top_padding_top;
+        padding-right: $header_top_padding_right;
+        padding-bottom: $header_top_padding_bottom;
+        padding-left: $header_top_padding_left;
+    }
+    #cshero-header{
+        position: relative;
+        z-index: 300;
+        &.fixed-pos {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            @include transform(translateY(-100%));
+            &.admin_bar{
+                top:32px;
+            }
+            &.active {
+                #main-navigation-inner {
+                    background-color: #000;
+                    padding: 12px 0;
+                    @include transform(translateY(100%));
+                }
+            }
+            
+            #main-navigation-inner {
+                opacity: 0.8;
+                @include transform(translateY(0));
+                
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+        #main-navigation-inner {
+            @include transform(translateY(0));
+            @include transition(all 0.3s linear);
+        }
+    }
+}
+#main-navigation-placeholder {
+    display: none;
+    
+    &.active {
+        display: block;
+    }
+}
+.centered-columns{
+    display: table;
+    width: 100%;
+    height: 100%;
+    .centered-column{
+    	display: table-cell;
+	    vertical-align: middle;
+	    float: none;
+	    .page-logo{
+	    	margin-right: 9px;
+	    }
+        &.centered-column-bottom {
+            vertical-align: bottom;
+        }
+        
+        &.centered-column-top {
+            vertical-align: top;
+        }
+    }
+    .img-responsive {
+        width: 100%;
+    }
+}
+
+/*== Page title ==*/
+#page-title{
+    position: relative;
+    color: #000;
+    font-size: 19px;
+    font-style: italic;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 45px;
+    img{
+        margin-top: 41px;
+        &.img-full-fixed{
+            height: auto !important;
+            width: auto !important;
+            max-width:none !important;
+        }
+    }
+    h1 {
+        font-size: 39px;
+        font-style: normal;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+    }
+    p{
+        margin-bottom: 5px;
+    }
+
+    .page-title-wrap {
+        position: absolute;
+        bottom: 12%;
+        left: 0;
+        width: 100%;
+        #breadcrumb-text{
+            ul.breadcrumbs{
+                padding:0;
+                li{
+                    list-style: none;
+                    display: inline;
+                    font-weight: 400;
+                    font-style: normal;
+                    &:after{
+                        content:'/';
+                        margin: 0 10px;
+                    }
+                    &:last-child{
+                       &:after{
+                            content:'';
+                            margin: 0;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1600px) {
+    header#masthead{
+        background: rgba(0,0,0,0.4);
+        position: static;
+        left: auto;
+        top: auto;
+        &.has_admin_bar{
+            margin-top: 0;
+        }
+    }
+    #page-title{
+        img{
+            margin-top: 0;
+        }
+        
+    }
+}
+
+@media (max-width: 767px) {
+    header#masthead{
+        padding:0 0 15px;
+        #cshero-header-top{
+            margin: 0 0 15px;
+        }
+    }
+    #page-title{
+        .page-sub-title{
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,162 @@
+.menu-text-title {
+font-size: 25px;
+}
+.menu-product-title {
+  font-size: 23px;
+}
+.woocommerce a.button.checkout-button:hover {
+    color: #fff;
+    background: #D53E2F;
+    border: 1px solid #D53E2F;
+}
+
+.woocommerce input.button.wp-pizzeria-button:hover {
+  color: #000;
+  background: #D53E2F;
+  border: 1px solid #D53E2F;
+}
+
+.woocommerce .coupon input.button:hover {
+  color: #000;
+  background: #D53E2F;
+  border: 1px solid #D53E2F;
+}
+
+.woocommerce-page .woocommerce .woocommerce-checkout .woocommerce-checkout-payment input.button {
+  border-color: #D53E2F;
+  background: #D53E2F;
+  &:hover {
+    border-color: #D85143;
+    background: #D85143;
+  }
+}
+.woocommerce.woocommerce-page .woocommerce-message .button.wc-forward {
+  border-color: #D53E2F;
+  background: #D53E2F;
+  color: #fff;
+  &:hover {
+    border-color: #D85143;
+    background: #D85143;
+  }
+}
+.woocommerce-checkout #payment {
+    background: #0C7F40;
+    border-radius: 5px;
+}
+.woocommerce.woocommerce-page ul.products li.product .wp-pizzeria-button:hover, .woocommerce.woocommerce-page ul.products li.product a.wp-pizzeria-button:hover {
+  border-color: #D53E2F;
+  background: #D53E2F;
+}
+
+nav.navigation .pagination span.page-numbers {
+    color: #fff;
+    border-color: #0c7f40;
+    background-color: #0c7f40;
+}
+
+nav.navigation .pagination .page-numbers:hover {
+    color: #fff !important;
+    border-color: #D53E2F;
+    background-color: #D53E2F;
+}
+.woocommerce.woocommerce-page ul.products li.product span.price {
+  color: #16A556;
+}
+
+nav.woocommerce-pagination ul.page-numbers li .page-numbers:hover, nav.woocommerce-pagination ul.page-numbers li .page-numbers.current {
+  background: #d53e2f;
+  color: #fff;
+  border-color: #d53e2f;
+  &:hover {
+    background: #0c7f40;
+    color: #fff !important;
+    border-color: #0c7f40;
+  }
+}
+.woocommerce-info {
+  a {
+    color: #0C7F40 !important;
+  }
+}
+
+.woocommerce-page .woocommerce .login input.button:hover {
+  background: #D53E2F;
+  border: 1px solid #D53E2F;
+}
+.woocommerce-page .woocommerce .checkout_coupon input.button:hover {
+    color: #000;
+    border-color: #D53E2F;
+    background: #D53E2F;
+}
+.select2-container .select2-choice>.select2-chosen {
+    color: #000;
+}
+
+.woocommerce.single-product .product .entry-summary .wp-pizzeria-cart button.wp-pizzeria-button {
+    color: #F7F7F7;
+    background: #0C7F40;
+    &:hover {
+      background: #16A556;
+    }
+  }
+  .woocommerce.single-product .product .entry-summary .price {
+    color: #16A556;
+}
+.woocommerce #review_form #respond input[type=submit] {
+  background: #D53E2F;
+}
+.product-preview-medium .product-title a {
+  font-family:'Conv_Caveat-Bold',Sans-Serif !important;
+  font-size: 29px;
+}
+
+.product-content {
+  p {
+    em {
+      strong {
+        font-family:'Conv_ITCFranklinGothicStd-BkCp',Sans-Serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+.woocommerce div.product .product_title {
+    font-family:'Conv_Caveat-Bold',Sans-Serif !important;
+    font-size: 32px;
+}
+.product-preview-medium .product-price {
+    font-family:'Conv_ITCFranklinGothicStd-BkCp',Sans-Serif;
+    font-size: 20px;
+}
+.vc_separator.vc_separator_align_center h4 {
+  font-family:'Conv_ITCFranklinGothicStd-BkCp',Sans-Serif;
+  font-size: 29px;
+}
+.border-lines-container .border-lines {
+  font-family:'Conv_ITCFranklinGothicStd-BkCp',Sans-Serif;
+  font-size: 29px;
+}
+body h4 {
+  font-family:'Conv_Caveat-Bold',Sans-Serif;
+
+  font-size: 29px;
+}
+@media screen and (max-width: 768px) {
+  .menu-text-title {
+    h2 {
+      text-align: center;
+      small {
+        text-align: center;
+      }
+    }
+    p {
+      text-align: center;
+      span{
+        text-align: center;
+      }
+    }
+  }
+}

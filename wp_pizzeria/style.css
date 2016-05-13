@@ -1,0 +1,145 @@
+/*
+Theme Name: wp_pizzeria
+Theme URI: http://cmssuperheroes.com
+Author: CMSSuperHeroes
+Author URI: http://themeforest.net/user/CMSSuperHeroes
+Description: The 2015 theme for WordPress is a fully responsive theme that looks great on any device. Features include a front page template with its own widgets, an optional display font, styling for post formats on both index and single views, and an optional no-sidebar page template. Make it yours with a custom menu, header image, and background.
+Version: 1.0.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, fluid-layout, responsive-layout, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready, accessibility-ready
+Text Domain: wp_pizzeria
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+.screen-reader-text,.wp-caption-text,.wp-caption,.gallery-caption{
+
+}
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+	background: #fff;
+}
+
+h2, h3 {
+  font-family: 'Roboto', sans-serif !important;
+}
+#main {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+header#masthead {
+  padding-bottom: 10px !important;
+}
+
+#cshero-header-top {
+  padding-bottom: 10px !important;
+}
+
+header#masthead #cshero-header-top {
+  background-color: #0c7f40 !important;
+}
+
+footer.page-footer {
+  background: #0c7f40 url("images/footer-bg.png") repeat center top;
+  color: #fff !important;
+}
+
+.button-yellow.button-heavy {
+  background-color: #d53e2f;
+  color: #fff !important;
+}
+.footer-bottom-links {
+  background: #0c7f40;
+  padding: 20px;
+  font-size: 13px;
+  font-family: FranklinGothic-BookIt;
+}
+
+#page-title {
+  margin-bottom: 0 !important;
+}
+
+#page-title img {
+    margin-top: 0 !important;
+}
+
+header#masthead {
+  background: transparent !important;
+}
+
+.container-fluid {
+    margin-right: auto !important;
+    margin-left: auto !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.menu-page-nav ul {
+  display: inline-flex;
+}
+.menu-page-nav ul li {
+  padding: 1px 32px 1px 7px;
+  color: #fff;
+}
+.menu-page-nav ul li a {
+  color: #fff;
+  font-size: 20px;
+}
+#main-bg {
+  background:  url("images/body-bg.png") repeat center top;
+  color: #fff !important;
+  padding-top: 40px;
+}
+
+.menu-text {
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+}
+#main-navigation ul.nav-menu > li a {
+  font-family: 'Roboto', sans-serif !important;
+}
+.menu-text span {
+  font-size: 15px;
+}
+
+footer.page-footer #cshero-footer-top {
+  padding: 10px 0 80px 0 !important;
+}
+.page-footer {
+  margin-top: 0 !important;
+}
+.widget_nav_menu ul li, .widget_nav_menu ol li {
+    list-style: inherit !important;
+    padding: 10px 36px 0 0px !important;
+    font-size: 21px !important;
+    color: #fff !important;
+}
+.entry-content a {
+  color: #fff !important;
+}
+.widget_nav_menu ul {
+  display: inline-flex !important;
+}
+.textwidget p span{
+  font-size: 20px;
+}
+.cms-fancyboxes-item-desc {
+  padding-left: 40px;
+}
+
+@media screen and (min-width: 1600px) {
+  #page-title img {
+      margin-top: 170px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-links-right {
+    text-align: center !important;
+  }
+
+}
